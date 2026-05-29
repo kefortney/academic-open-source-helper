@@ -1,6 +1,11 @@
 ---
 name: open-source-plan
 description: Generate a comprehensive, ordered migration plan to open-source an academic research repository. Synthesizes readiness findings, safety concerns, licensing, citation integrity gaps, and documentation into a human-reviewable checklist that surfaces decision points rather than making them automatically. Use when a researcher wants a full roadmap before beginning the open-sourcing process.
+license: MIT
+compatibility: Requires git. The path argument replaces $ARGUMENTS (default: current directory).
+metadata:
+  author: VERSO-UVM
+  version: "1.0"
 argument-hint: "[path-to-repo]"
 context: fork
 agent: claude

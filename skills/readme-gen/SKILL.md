@@ -1,6 +1,11 @@
 ---
 name: readme-gen
 description: Draft a research-tuned README for an academic repository. Includes sections for purpose, installation, usage, data provenance, methods and reproducibility, how to cite, funding, related publications, and data availability. Use when a researcher needs a README that meets academic open-source best practices, not just a generic software README.
+license: MIT
+compatibility: Requires git. The path argument replaces $ARGUMENTS (default: current directory).
+metadata:
+  author: VERSO-UVM
+  version: "1.0"
 argument-hint: "[path-to-repo]"
 context: fork
 agent: claude

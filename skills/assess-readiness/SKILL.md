@@ -1,6 +1,11 @@
 ---
 name: assess-readiness
 description: Assess whether an academic research repository is ready to be open-sourced. Produces a scored checklist covering LICENSE, README, citation metadata, reproducibility, secrets, and PII. Use when a researcher wants to know what work is needed before publishing their code.
+license: MIT
+compatibility: Requires git. The path argument replaces $ARGUMENTS (default: current directory).
+metadata:
+  author: VERSO-UVM
+  version: "1.0"
 argument-hint: "[path-to-repo]"
 context: fork
 agent: claude

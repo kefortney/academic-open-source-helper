@@ -1,0 +1,6 @@
+{
+  "name": "academic-open-source-helper",
+  "version": "1.0.0",
+  "description": "Skills for taking an academic research project from closed to fully open source. Covers secrets scanning, readiness assessment, citation integrity (DOI, CITATION.cff, codemeta), README generation, and migration planning.",
+  "contextFileName": "GEMINI.md"
+}

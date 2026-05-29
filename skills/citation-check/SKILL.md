@@ -1,6 +1,11 @@
 ---
 name: citation-check
 description: Check citation integrity in an academic repository. Verifies that DOIs resolve and match what they claim, validates or generates CITATION.cff and codemeta.json, and checks Zenodo archival readiness. This is the academic differentiator — use it before open-sourcing any research repository.
+license: MIT
+compatibility: Requires git, curl, and python3; cffconvert recommended for CITATION.cff validation. The path argument replaces $ARGUMENTS (default: current directory).
+metadata:
+  author: VERSO-UVM
+  version: "1.0"
 argument-hint: "[path-to-repo]"
 context: fork
 agent: claude

@@ -1,6 +1,12 @@
 ---
 name: academic-open-source-helper
 description: Skills for taking an academic research project from closed to fully open source. Covers readiness assessment, secrets/PII scanning, citation integrity (DOI verification, CITATION.cff, codemeta), README generation, and migration planning. Use any skill in this plugin when helping a researcher publish, open-source, or improve the scholarly reproducibility of their code repository.
+license: MIT
+metadata:
+  author: VERSO-UVM
+  version: "1.0"
+  homepage: https://github.com/VERSO-UVM/academic-open-source-helper
+  standard: https://agentskills.io
 ---
 
 This plugin provides five skills for academic open-source migration. Each can be invoked independently or as part of a full migration workflow.

@@ -1,0 +1,51 @@
+{
+  "name": "academic-open-source-helper",
+  "version": "1.0.0",
+  "description": "Skills for taking an academic research project from closed to fully open source. Covers secrets/PII scanning, readiness assessment, citation integrity (DOI, CITATION.cff, codemeta), README generation, and migration planning.",
+  "homepage": "https://github.com/VERSO-UVM/academic-open-source-helper",
+  "license": "MIT",
+  "author": "VERSO / ORCA at the University of Vermont",
+  "standard": "https://agentskills.io",
+  "workflow": {
+    "description": "Run skills in order; each phase gates the next",
+    "steps": [
+      { "step": 1, "skill": "secrets-scan",    "required": true,  "note": "Safety gate — CRITICAL findings block all later phases" },
+      { "step": 2, "skill": "assess-readiness", "required": true,  "note": "Full readiness scorecard" },
+      { "step": 3, "skill": "citation-check",   "required": true,  "note": "Academic integrity check" },
+      { "step": 4, "skill": "readme-gen",       "required": false, "note": "Draft documentation" },
+      { "step": 5, "skill": "open-source-plan", "required": true,  "note": "Phased migration checklist" }
+    ]
+  },
+  "skills": [
+    {
+      "name": "secrets-scan",
+      "path": "skills/secrets-scan",
+      "phase": 1,
+      "tags": ["safety", "security", "pii", "credentials"]
+    },
+    {
+      "name": "assess-readiness",
+      "path": "skills/assess-readiness",
+      "phase": 2,
+      "tags": ["assessment", "scorecard", "fair", "license", "reproducibility"]
+    },
+    {
+      "name": "citation-check",
+      "path": "skills/citation-check",
+      "phase": 3,
+      "tags": ["citation", "doi", "codemeta", "fair", "zenodo", "cff"]
+    },
+    {
+      "name": "readme-gen",
+      "path": "skills/readme-gen",
+      "phase": 4,
+      "tags": ["documentation", "readme", "draft"]
+    },
+    {
+      "name": "open-source-plan",
+      "path": "skills/open-source-plan",
+      "phase": 5,
+      "tags": ["planning", "orchestration", "checklist", "migration"]
+    }
+  ]
+}

@@ -1,6 +1,11 @@
 ---
 name: secrets-scan
 description: Scan a repository for hardcoded secrets, API keys, credentials, and PII in both the working tree and git history. This is the safety gate — always run before open-sourcing any academic repository. Emits CRITICAL findings for anything that would be exposed on a public GitHub repo.
+license: MIT
+compatibility: Requires git; trufflehog or detect-secrets recommended but not required. The path argument replaces $ARGUMENTS (default: current directory).
+metadata:
+  author: VERSO-UVM
+  version: "1.0"
 argument-hint: "[path-to-repo]"
 context: fork
 agent: claude
